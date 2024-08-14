@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="Status">
-    <select id=""
+    <delete id="deleteStatus" parameterType="Map">
+        delete from STATUS WHERE STATUS_PK = #{STATUS_PK}
+    </delete>
 </mapper>

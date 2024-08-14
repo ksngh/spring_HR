@@ -6,8 +6,8 @@
     </select>
 
     <select id="">
--- userpk로 user 정보 불러오는 쿼리문을 작성하시요
-SELECT * FROM USER WHERE USER_PK = #{user_pk};
+        -- userpk로 user 정보 불러오는 쿼리문을 작성하시요
+        SELECT * FROM USER WHERE USER_PK = #{user_pk};
     </select>
 
     <insert id="insertHrUser" parameterType="Map" >
