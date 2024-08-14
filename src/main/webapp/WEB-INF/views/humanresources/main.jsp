@@ -12,7 +12,7 @@
 </head>
 <body>
 <li>
-    <a href = "">
+    <a href = "/hr/main">
 
     </a>
 
