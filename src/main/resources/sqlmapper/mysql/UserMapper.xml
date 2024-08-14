@@ -1,4 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="User">
+    <select id="selectHrUser" parameterType="Map" resultType="Map">
+        SELECT * FROM USER WHERE NAME = #{user_id});
+    </select>
+
+    <select id="">
+-- userpk로 user 정보 불러오는 쿼리문을 작성하시요
+SELECT * FROM USER WHERE USER_PK = #{user_pk};
+    </select>
+
+    <insert id="insertHrUser" parameterType="Map" >
+        INSERT INTO USER(USER_PK,DEPARTMENT_PK,NAME,PASSWORD,EMAIL,JOB)
+        VALUES (#{user_pk},#{department_pk},#{name}
+               ,#{password},#{password},#{email},#{job});
+    </insert>
 </mapper>
